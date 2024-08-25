@@ -1,11 +1,11 @@
 .post {
   display: flex;
   flex-direction: column;
-  width: 200px;
   border: 1px solid #ddd;
-  border-radius: 4px;
   overflow: hidden;
+  border-radius: 10px;
   margin: 10px;
+  width: 240px;
 }
 
 .image {
