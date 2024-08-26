@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { setUser } from '../../features/userSlice';
 import { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login: React.FC = () => {
   const [username, setUsername] = useState('');
@@ -16,12 +18,11 @@ const Login: React.FC = () => {
       dispatch(setUser(user[0]));
       navigate('/');
     } else if (!isLoading && error) {
-      alert('User not found');
+      toast.error('User not found');
     } else if (user && user.length === 0) {
-      alert('User not found');
+      toast.error('User not found');
     }
   };
-  
 
   return (
     <div className="loginContainer">
@@ -37,6 +38,7 @@ const Login: React.FC = () => {
       <button onClick={handleLogin} className="button">
         Submit
       </button>
+      <ToastContainer />
     </div>
   );
 };
