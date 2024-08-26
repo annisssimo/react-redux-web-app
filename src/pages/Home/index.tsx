@@ -1,6 +1,5 @@
 import Post from '../../components/Post';
 import { useGetPostsQuery } from '../../features/apiSlice';
-import Header from '../../components/Header/index'; 
 import './index.css';
 
 
@@ -12,10 +11,9 @@ const Home: React.FC = () => {
 
   return (
     <>
-      <Header />
       <div className="container">
         {posts?.map((post: { id: number; title: string; body: string }) => (
-          <Post key={post.id} title={post.title} body={post.body} />
+          <Post key={post.id} title={post.title} body={post.body} id={post.id} />
         ))}
       </div>
   </>

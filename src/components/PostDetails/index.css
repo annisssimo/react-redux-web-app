@@ -1,0 +1,41 @@
+.post-details {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 40px;
+}
+
+.post-details h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.post-details p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.post-details h3 {
+  margin-top: 40px;
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+
+.post-details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.post-details li {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-details li strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
