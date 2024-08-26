@@ -1,4 +1,4 @@
-import'./index.css';
+import styles from './Post.module.css';
 import { Link } from 'react-router-dom';
 
 interface PostProps {
@@ -9,11 +9,11 @@ interface PostProps {
 
 const Post: React.FC<PostProps> = ({ id, title, body }) => {
   return (
-    <Link to={`/post/${id}`} className="post">
-      <img src="https://via.placeholder.com/150" alt="Post Image" className="image" />
-      <div className="content">
-        <h2 className="title">{title}</h2>
-        <p className="body">{body}</p>
+    <Link to={`/post/${id}`} className={styles.post}>
+      <img src="https://via.placeholder.com/150" alt="Post Image" className={styles.image} />
+      <div className={styles.content}>
+        <h2 className={styles.title}>{title}</h2>
+        <p className={styles.body}>{body}</p>
       </div>
     </Link>
   );

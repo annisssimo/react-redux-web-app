@@ -1,4 +1,4 @@
-import './index.css';
+import styles from './Login.module.css';
 import { useGetUserQuery } from '../../features/apiSlice';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
@@ -25,17 +25,17 @@ const Login: React.FC = () => {
   };
 
   return (
-    <div className="loginContainer">
-      <div className="pet-emoji">🐾</div>
+    <div className={styles.loginContainer}>
+      <div className={styles.petEmoji}>🐾</div>
       <h1>Sign In to MyApp</h1>
       <input
         type="text"
         placeholder="Username"
         value={username}
         onChange={(e) => setUsername(e.target.value)}
-        className="input"
+        className={styles.input}
       />
-      <button onClick={handleLogin} className="button">
+      <button onClick={handleLogin} className={styles.button}>
         Submit
       </button>
       <ToastContainer />

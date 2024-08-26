@@ -1,4 +1,4 @@
-import './index.css';
+import styles from './PostDetails.module.css';
 import { useParams } from 'react-router-dom';
 import { useGetPostsQuery } from '../../features/apiSlice';
 
@@ -22,7 +22,7 @@ const PostDetails: React.FC = () => {
   if (!post) return <div>Post not found</div>;
 
   return (
-    <div className="post-details">
+    <div className={styles.postDetails}>
       <h1>{post.title}</h1>
       <p>{post.body}</p>
       <h3>Comments:</h3>
