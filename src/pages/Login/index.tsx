@@ -25,6 +25,7 @@ const Login: React.FC = () => {
 
   return (
     <div className="loginContainer">
+      <h1>Login to MyApp</h1>
       <input
         type="text"
         placeholder="Username"
