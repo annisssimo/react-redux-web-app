@@ -1,8 +1,19 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
 .loginContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 300px;
+  height: 400px;
+  text-align: center;
+  margin-top: 100px;
 }
 
 .input {
@@ -10,4 +21,12 @@
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+
+h1 {
+  margin: 10px 0px 40px;
+}
+
+.pet-emoji {
+  font-size: 60px;
 }
