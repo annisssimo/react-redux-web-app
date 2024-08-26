@@ -1,5 +1,5 @@
 .post-details {
-  background-color: white;
+  background-color: var(--white);
   padding: 20px;
   border-radius: 8px;
   margin: 40px;

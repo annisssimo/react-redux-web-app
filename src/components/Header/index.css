@@ -25,6 +25,13 @@
 }
 
 .loginButton:hover {
-  background-color: #646cff;
-  color: white;
+  background-color: var(--purple);
+  color: var(--white);
+}
+
+.greeting {
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: normal;
+  color: var(--purple);
 }

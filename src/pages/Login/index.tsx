@@ -27,7 +27,7 @@ const Login: React.FC = () => {
   return (
     <div className="loginContainer">
       <div className="pet-emoji">🐾</div>
-      <h1>Login to MyApp</h1>
+      <h1>Sign In to MyApp</h1>
       <input
         type="text"
         placeholder="Username"

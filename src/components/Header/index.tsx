@@ -17,11 +17,14 @@ const Header: React.FC = () => {
       <div className="logo">
         <Link to="/">MyApp 🐾</Link>
       </div>
-      <div className="authButton">
+      <div className="authSection">
         {user ? (
-          <button onClick={handleLogout} className="logoutButton">
-            Log Out
-          </button>
+          <>
+            <span className="greeting">Hello, {user.name}!</span>
+            <button onClick={handleLogout} className="logoutButton">
+              Log Out
+            </button>
+          </>
         ) : (
           <Link to="/login" className="loginButton">
             Sign In
